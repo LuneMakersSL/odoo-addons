@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Analytic Distribution by Sales Team',
-    'version': '18.0.1.0.0',
+    'version': '18.0.1.0.1',
     'category': 'Accounting/Accounting',
     'summary': 'Add Sales Team as a matching criterion for analytic '
                'distribution models.',
