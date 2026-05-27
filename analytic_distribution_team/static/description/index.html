@@ -1,0 +1,143 @@
+<section class="oe_container" style="background: #ffffff;">
+    <style>
+        .ldm-wrap { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #2c2f2e; line-height: 1.6; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        .ldm-hero { background: linear-gradient(135deg, #616D69 0%, #4f5957 100%); color: #ffffff; padding: 64px 48px; border-radius: 12px; margin-top: 32px; position: relative; overflow: hidden; }
+        .ldm-hero::before { content: ''; position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%); pointer-events: none; }
+        .ldm-eyebrow { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; opacity: 0.7; margin-bottom: 16px; font-weight: 500; }
+        .ldm-title { font-size: 44px; font-weight: 300; letter-spacing: -1px; margin: 0 0 16px 0; line-height: 1.15; }
+        .ldm-title strong { font-weight: 600; }
+        .ldm-tagline { font-size: 19px; opacity: 0.85; font-weight: 300; margin: 0; max-width: 640px; }
+        .ldm-section { padding: 56px 0 24px 0; border-bottom: 1px solid #eaeaea; }
+        .ldm-section:last-of-type { border-bottom: none; }
+        .ldm-h2 { font-size: 14px; letter-spacing: 2px; text-transform: uppercase; color: #616D69; font-weight: 600; margin: 0 0 8px 0; }
+        .ldm-h3 { font-size: 28px; font-weight: 400; margin: 0 0 24px 0; color: #1a1d1c; letter-spacing: -0.5px; }
+        .ldm-p { font-size: 16px; color: #4a4f4d; margin: 0 0 16px 0; max-width: 780px; }
+        .ldm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 32px; }
+        .ldm-card { background: #fafaf8; border: 1px solid #ececea; border-radius: 8px; padding: 28px; }
+        .ldm-card-title { font-size: 17px; font-weight: 600; margin: 0 0 8px 0; color: #1a1d1c; }
+        .ldm-card-desc { font-size: 14px; color: #6a6f6d; margin: 0; line-height: 1.55; }
+        .ldm-card-num { font-size: 12px; color: #616D69; font-weight: 600; letter-spacing: 1px; margin-bottom: 12px; }
+        .ldm-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 14px; }
+        .ldm-table th, .ldm-table td { padding: 14px 16px; text-align: left; border-bottom: 1px solid #ececea; }
+        .ldm-table th { background: #fafaf8; font-weight: 600; color: #1a1d1c; font-size: 13px; letter-spacing: 0.5px; }
+        .ldm-table td { color: #4a4f4d; }
+        .ldm-yes { color: #2f6b53; font-weight: 600; }
+        .ldm-no { color: #95524a; font-weight: 600; }
+        .ldm-steps { counter-reset: step; padding: 0; list-style: none; margin: 24px 0 0 0; }
+        .ldm-step { counter-increment: step; position: relative; padding: 0 0 24px 56px; }
+        .ldm-step::before { content: counter(step); position: absolute; left: 0; top: -4px; width: 36px; height: 36px; border-radius: 50%; background: #616D69; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 15px; }
+        .ldm-step-title { font-size: 16px; font-weight: 600; margin: 4px 0 4px 0; color: #1a1d1c; }
+        .ldm-step-desc { font-size: 14px; color: #6a6f6d; margin: 0; line-height: 1.55; }
+        .ldm-footer { background: #1a1d1c; color: #c0c4c2; padding: 40px 48px; border-radius: 12px; margin: 48px 0 32px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+        .ldm-footer-brand { font-size: 18px; color: #ffffff; font-weight: 500; letter-spacing: 0.5px; }
+        .ldm-footer-meta { font-size: 13px; opacity: 0.7; }
+        .ldm-footer a { color: #ffffff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
+        .ldm-code { font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 13px; background: #f4f4f1; color: #1a1d1c; padding: 2px 8px; border-radius: 4px; }
+    </style>
+
+    <div class="ldm-wrap">
+
+        <!-- HERO -->
+        <div class="ldm-hero">
+            <div class="ldm-eyebrow">For Odoo 18 — Accounting</div>
+            <h1 class="ldm-title">Analytic Distribution<br/><strong>by Sales Team</strong></h1>
+            <p class="ldm-tagline">Route analytic accounts automatically based on which sales team owns a quotation or invoice. One small criterion, a whole new dimension of reporting.</p>
+        </div>
+
+        <!-- OVERVIEW -->
+        <div class="ldm-section">
+            <p class="ldm-h2">Overview</p>
+            <h2 class="ldm-h3">One missing criterion. Now it's there.</h2>
+            <p class="ldm-p">Out of the box, Odoo's analytic distribution rules can be triggered by partner, partner category, product, product category, account prefix, and company. This module adds <strong>Sales Team</strong> to that list — without changing how anything else behaves.</p>
+            <p class="ldm-p">Configure a rule once, and every sale order or customer invoice belonging to that team will get its analytic accounts assigned automatically. No manual entry, no journal-line scripts, no maintenance.</p>
+        </div>
+
+        <!-- USE CASES -->
+        <div class="ldm-section">
+            <p class="ldm-h2">Use cases</p>
+            <h2 class="ldm-h3">Built for real-world structures</h2>
+            <div class="ldm-grid">
+                <div class="ldm-card">
+                    <div class="ldm-card-num">01</div>
+                    <p class="ldm-card-title">Multi-brand companies</p>
+                    <p class="ldm-card-desc">Each brand is a separate sales team. Tag every sale and invoice to the right brand's analytic account, automatically.</p>
+                </div>
+                <div class="ldm-card">
+                    <div class="ldm-card-num">02</div>
+                    <p class="ldm-card-title">Marketplaces</p>
+                    <p class="ldm-card-desc">Amazon, eBay, Cdiscount, BUT, Vente-Unique… one team per channel, one analytic account per team, clean P&amp;L per marketplace.</p>
+                </div>
+                <div class="ldm-card">
+                    <div class="ldm-card-num">03</div>
+                    <p class="ldm-card-title">Geographic divisions</p>
+                    <p class="ldm-card-desc">Different sales teams per country or region. Each one routed to its own analytic dimension for cross-border reporting.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- HOW IT WORKS -->
+        <div class="ldm-section">
+            <p class="ldm-h2">How to use it</p>
+            <h2 class="ldm-h3">Three steps. That's all.</h2>
+            <ol class="ldm-steps">
+                <li class="ldm-step">
+                    <p class="ldm-step-title">Open an Analytic Distribution Model</p>
+                    <p class="ldm-step-desc">Go to <span class="ldm-code">Accounting → Configuration → Analytic Distribution Models</span> and create or edit a rule.</p>
+                </li>
+                <li class="ldm-step">
+                    <p class="ldm-step-title">Set the Sales Team</p>
+                    <p class="ldm-step-desc">A new field <strong>Sales Team</strong> appears alongside the existing criteria. Pick the team this rule should apply to.</p>
+                </li>
+                <li class="ldm-step">
+                    <p class="ldm-step-title">Configure the distribution</p>
+                    <p class="ldm-step-desc">Set the analytic accounts and percentages as usual. From now on, any sale or invoice belonging to that team will pick up the distribution automatically.</p>
+                </li>
+            </ol>
+        </div>
+
+        <!-- BEHAVIOUR MATRIX -->
+        <div class="ldm-section">
+            <p class="ldm-h2">Behaviour</p>
+            <h2 class="ldm-h3">Predictable. No surprises.</h2>
+            <p class="ldm-p">Rules with a sales team only apply where it makes sense. The module is silent on documents that have no team concept.</p>
+            <table class="ldm-table">
+                <thead>
+                    <tr>
+                        <th>Document</th>
+                        <th>Rule has team?</th>
+                        <th>Document has team?</th>
+                        <th>Applied?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Sale order / Invoice</td><td>No</td><td>—</td><td class="ldm-yes">Yes (unchanged)</td></tr>
+                    <tr><td>Sale order / Invoice</td><td>Yes</td><td>Same team</td><td class="ldm-yes">Yes</td></tr>
+                    <tr><td>Sale order / Invoice</td><td>Yes</td><td>Different / none</td><td class="ldm-no">No</td></tr>
+                    <tr><td>Purchase, Expense, …</td><td>Yes</td><td>—</td><td class="ldm-no">No</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- TECHNICAL -->
+        <div class="ldm-section">
+            <p class="ldm-h2">Under the hood</p>
+            <h2 class="ldm-h3">Light, surgical, upgrade-friendly</h2>
+            <p class="ldm-p">Adds a single <span class="ldm-code">team_id</span> field on <span class="ldm-code">account.analytic.distribution.model</span>. Uses Odoo's native matching engine — no parallel logic, no shadow rules.</p>
+            <p class="ldm-p">On the invoice side, the official core hook <span class="ldm-code">_get_analytic_distribution_arguments</span> is extended. On the sale side, the compute method is reimplemented to inject the team into the matcher (core does not expose a hook there).</p>
+            <p class="ldm-p">Depends on <span class="ldm-code">account</span> and <span class="ldm-code">sale</span>. LGPL-3 licensed.</p>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="ldm-footer">
+            <div>
+                <div class="ldm-footer-brand">Lune Makers SL</div>
+                <div class="ldm-footer-meta">Odoo development &amp; integration</div>
+            </div>
+            <div class="ldm-footer-meta">
+                <a href="https://lunemakers.com">lunemakers.com</a> &nbsp;·&nbsp;
+                <a href="mailto:info@lunemakers.com">info@lunemakers.com</a>
+            </div>
+        </div>
+
+    </div>
+</section>
